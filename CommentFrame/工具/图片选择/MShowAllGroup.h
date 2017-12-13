@@ -1,0 +1,23 @@
+//
+//  MShowAllGroup.h
+//  QQImagePicker
+//
+//  Created by mark on 15/9/11.
+//  Copyright (c) 2015年 mark. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "MShowGroupAllSet.h"
+
+
+@interface MShowAllGroup : HDBaseVC
+
+- (id)initWithArrGroup:(NSArray *)arrGroup arrSelected:(NSMutableArray *)arr selectBlock:(void(^)(NSMutableArray *))selectBlock;
+@property (nonatomic, strong) NSMutableArray *arrSeleted;
+
+
+
+//图片总数量限制
+@property(nonatomic,assign)NSInteger maxCout;
+
+@end
